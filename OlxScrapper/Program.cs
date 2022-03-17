@@ -28,18 +28,24 @@ namespace OlxScrapper
                 .ConfigureServices((context, services) =>
                 {
                     services.AddScheduler();
-                    services.AddTransient<CoravelService>();
+                    services.AddTransient<IScrapperServiceFactory, ScrapperServiceFactory>();
                 })
                 .UseSerilog()
                 .Build();
 
             host.Services.UseScheduler(scheduler =>
             {
-                var jobSchedule = scheduler.Schedule<CoravelService>();
-                jobSchedule.EverySecond();
+                var jobSchedule = scheduler.Schedule<IScrapperServiceFactory>();
+                jobSchedule
+                    .EverySecond();
             });
 
+
             host.Run();
+
+            var svc = ActivatorUtilities.CreateInstance<IScrapperServiceFactory>(host.Services);
+            svc.AddNewService("test", 1);
+ 
         }
 
         static void BuildConfig(IConfigurationBuilder builder)

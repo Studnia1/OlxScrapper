@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32106.194
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OlxScrapper", "OlxScrapper\OlxScrapper.csproj", "{99DE0BAA-DEEF-46BF-B002-1745D8EBE983}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OlxScrapper", "OlxScrapper\OlxScrapper.csproj", "{99DE0BAA-DEEF-46BF-B002-1745D8EBE983}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OlxScrapper.API", "OlxScrapper.API\OlxScrapper.API.csproj", "{380854FD-54A6-4B57-AB77-1BFCDB212D58}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{99DE0BAA-DEEF-46BF-B002-1745D8EBE983}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99DE0BAA-DEEF-46BF-B002-1745D8EBE983}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99DE0BAA-DEEF-46BF-B002-1745D8EBE983}.Release|Any CPU.Build.0 = Release|Any CPU
+		{380854FD-54A6-4B57-AB77-1BFCDB212D58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{380854FD-54A6-4B57-AB77-1BFCDB212D58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{380854FD-54A6-4B57-AB77-1BFCDB212D58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{380854FD-54A6-4B57-AB77-1BFCDB212D58}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
